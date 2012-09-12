@@ -35,8 +35,8 @@ $(document).ready(function(){
 				// on the fly based on our in-memory category data structure.
 				
 
-			alert("u: " + u.toSource());
-			alert("data: " + (data.options).toSource());
+			console.log("u: " + u);
+			console.log("data: " + data.options);
 				//showCategory( u, data.options );
 
 				// Make sure to tell changePage() we've handled this call so it doesn't
