@@ -1,6 +1,6 @@
 /* Code to hopefully generate the (dynamic) menu */
 
-var menuData = {
+/*var menuData = {
 	beaches: {
 		name: 			"Beaches",
 		description: 	"An A-Z list of all the beaches in Barbados.",
@@ -13,13 +13,13 @@ var menuData = {
 					{name: "Beach #6"},
 				]
 	}
-}
+}*/
 
 // Init() the A-Z menu
 for(var i = 0; i < 4; i++) {
-	$('#azMenu').append('<li data-theme="c"><a href="#" data-transition="slide">Button '+i+'</a></li>');
+	$("#azMenu").append('<li data-theme="c"><a href="#" data-transition="slide">Button '+i+'</a></li>');
 }
-$('#azMenu').listview("refresh");
+$("#azMenu").listview("refresh");
 
 /*
 $.mobile.loadPage( "test-menu.php", {
