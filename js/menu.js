@@ -16,7 +16,9 @@ var menuData = {
 }
 
 // Init() the A-Z menu
-$('#azMenu').append(menuData['items']);
+for(var i = 0; i < 4; i++) {
+	$('#azMenu').append('<li data-theme="c"><a href="#" data-transition="slide">Button '+i+'</a></li>');
+}
 $('#azMenu').listview("refresh");
 
 /*
