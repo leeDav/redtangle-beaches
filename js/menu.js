@@ -16,7 +16,8 @@
 }*/
 
 // Init() the A-Z menu
-for(var i = 0; i < 4; i++) {
+$('#azMenu li').remove();
+for(var i = 1; i < 5; i++) {
 	$("#azMenu").append('<li data-theme="c"><a href="#" data-transition="slide">Button '+i+'</a></li>');
 }
 $("#azMenu").listview("refresh");
