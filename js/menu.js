@@ -18,9 +18,18 @@
 // Init() the A-Z menu
 $(document).ready(function(){
 	$('#azMenu li').remove();
-	for(var i = 1; i < 5; i++) {
-		$("#azMenu").append('<li data-theme="c"><a href="#" data-transition="slide">Button '+i+'</a></li>');
-	}
+	var theList = '';
+
+	$.ajax({
+		url: "http://www.beachesofbarbados.com/phonegap/listBeaches",
+	  	cache: false
+	}).done(function( html ) {
+	  	$("#azMenu").append(html);
+	});
+
+	/*for(var i = 1; i < 5; i++) {
+		$("#azMenu").append('<li><a href="index.html" data-transition="slide">Button '+i+'</a></li>');
+	}*/
 	$("#azMenu").listview("refresh");
 });
 
