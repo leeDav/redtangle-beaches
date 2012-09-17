@@ -37,7 +37,9 @@ $(document).ready(function(){
 				alert("hold on a sec");
 				//console.log(JSON.stringify((u)));
 				var beachName = u.href;
+				console.log("new: " + beachName);
 				beachName = beachName.split("=");
+				console.log("Split: " + beachName);
 				beachName = beachname[1];
 				console.log(beachName);
 				//showCategory( u, data.options );
