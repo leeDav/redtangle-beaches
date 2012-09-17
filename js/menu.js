@@ -36,7 +36,10 @@ $(document).ready(function(){
 				
 				alert("hold on a sec");
 				//console.log(JSON.stringify((u)));
-				console.log(u.href);
+				var beachName = u.href;
+				beachName = beachName.split("=");
+				beachName = beachname[1];
+				console.log(beachName);
 				//showCategory( u, data.options );
 
 				// Make sure to tell changePage() we've handled this call so it doesn't
