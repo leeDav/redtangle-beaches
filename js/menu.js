@@ -38,7 +38,7 @@ $(document).ready(function(){
 				//console.log(JSON.stringify((u)));
 				var beachName = u.href;
 				console.log("new: " + beachName);
-				beachName = beachName.split("=");
+				beachName = beachName.split("=", -1);
 				console.log("Split: " + beachName);
 				beachName = beachname[1];
 				console.log(beachName);
