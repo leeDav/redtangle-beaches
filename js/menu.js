@@ -33,8 +33,7 @@ $(document).ready(function(){
 				// We're being asked to display the items for a specific category.
 				// Call our internal method that builds the content for the category
 				// on the fly based on our in-memory category data structure.
-				
-				alert("hold on a sec");
+
 				//console.log(JSON.stringify((u)));
 				var beachName = u.href;
 				console.log("new: " + beachName);
